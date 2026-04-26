@@ -126,4 +126,8 @@ def menu():
 # ------------------ Start programu ------------------
 
 if __name__ == "__main__":
-    menu()
+    try:
+        menu()
+    except Exception as e:
+        print("❌ Wystąpił błąd:", e)
+    input("\nNaciśnij Enter, aby zamknąć program...")
